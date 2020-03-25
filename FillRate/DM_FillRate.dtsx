@@ -1,0 +1,600 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/31/2019 9:27:50 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="CBABRT480W10"
+  DTS:CreatorName="MMIHC\cbabr"
+  DTS:DTSID="{D0E9593E-DB01-4A26-A2E1-4A97B71A5F07}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="53"
+  DTS:VersionGUID="{DD26CD4B-1BDA-494F-800E-55E8D2A5AD53}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Oasis_ODS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B6F2DDF4-A936-4408-8B6E-24D0FF598510}"
+      DTS:ObjectName="Oasis_ODS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DADWD2W1601;Initial Catalog=Oasis_ODS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Oasis_ODS_UMIA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2A60B5CA-731C-4375-B00D-D08B30DD5D4F}"
+      DTS:ObjectName="Oasis_ODS_UMIA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DADWD2W1601;Initial Catalog=Oasis_ODS_UMIA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CF6A3849-75F9-40B7-9AF3-B2B7FB683F00}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Column_Name">
+      <DTS:VariableValue
+        DTS:DataType="8">LastName</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{76D1D955-DA1A-4D00-A955-BD2FF89D49A4}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Column_Total">
+      <DTS:VariableValue
+        DTS:DataType="8">135455</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3E779F1F-8EDF-4297-B3DE-BAE4812BCA5F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Configuation">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{63EAA8A1-7E09-4EEA-8F7A-A9D07DC325E5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Count_FilledIn">
+      <DTS:VariableValue
+        DTS:DataType="8">21625</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0901A3CE-C640-46E4-8664-55C141D0F943}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Database_Name">
+      <DTS:VariableValue
+        DTS:DataType="8">Oasis_ODS_UMIA</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A349D48D-02C7-4649-972F-AD6CF1482E6A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DateKey">
+      <DTS:VariableValue
+        DTS:DataType="8">18205</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E319E1FB-3BAB-47ED-B585-92F0FFA24418}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="decFillRate">
+      <DTS:VariableValue
+        DTS:DataType="8">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EB967815-5F86-4B2A-9752-F154E11B42A5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Department">
+      <DTS:VariableValue
+        DTS:DataType="8">Underwriting</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{39908C62-A5A3-47D5-84D3-73BFCCB476EE}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::Database_Name]+&quot;.&quot;+ @[User::Schema_Name]+&quot;.&quot;+  @[User::Table_Name]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="From_String">
+      <DTS:VariableValue
+        DTS:DataType="8">Oasis_ODS_UMIA.dbo.Entity</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{90BAD60D-AB44-4C0F-9881-186640BEB0C7}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Schema_Name">
+      <DTS:VariableValue
+        DTS:DataType="8">dbo</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{250CA292-CD73-4BDD-9539-43C4BD4C06F2}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Table_Name">
+      <DTS:VariableValue
+        DTS:DataType="8">Entity</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{01D46A4C-FFAB-4378-92D2-F3E866173744}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;Insert into ConstellationDW.dbo.DM_FillRate Values (&quot; + @[User::DateKey] + &quot;, '&quot; + @[User::Database_Name]  + &quot;','&quot; + @[User::Table_Name] + &quot;','&quot; + @[User::Column_Name] + &quot;','&quot; + @[User::Department] + &quot;','&quot; + @[User::Count_FilledIn] + &quot;','&quot; + @[User::Column_Total] +  &quot;',0 )&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varInsertDMFillRate">
+      <DTS:VariableValue
+        DTS:DataType="8">Insert into ConstellationDW.dbo.DM_FillRate Values (18205, 'Oasis_ODS_UMIA','Entity','LastName','Underwriting','21625','135455',0 )</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{05F07DF3-5D64-43CE-8954-815B5784744D}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;SELECT COUNT(*) as CountFilledIn FROM &quot; + @[User::From_String] + &quot; WHERE &quot; +  @[User::Column_Name] + &quot; IS NOT NULL or &quot; +  @[User::Column_Name] + &quot; is not null  or ltrim(rtrim(&quot;  + @Column_Name + &quot;)) = '' &quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varSelectRowCount">
+      <DTS:VariableValue
+        DTS:DataType="8">SELECT COUNT(*) as CountFilledIn FROM Oasis_ODS_UMIA.dbo.Entity WHERE LastName IS NOT NULL or LastName is not null  or ltrim(rtrim(LastName)) = '' </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A1512ED2-4B6F-4BE3-B04A-6F7A6761D509}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;SELECT COUNT(*) as CountTotalRows FROM &quot; + @[User::From_String]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varTotalRowCount">
+      <DTS:VariableValue
+        DTS:DataType="8">SELECT COUNT(*) as CountTotalRows FROM Oasis_ODS_UMIA.dbo.Entity</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7F156220-B549-47FA-93DA-E3D267675A3A}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;Update ConstellationDW.dbo.DM_FillRate Set Fill_Rate = CAST(No_Rows_Filled as decimal(12,2))/CAST(No_Rows_Total as decimal(12,2)) Where DateKey = &quot; +  @[User::DateKey]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varUpdateDMFillRate">
+      <DTS:VariableValue
+        DTS:DataType="8">Update ConstellationDW.dbo.DM_FillRate Set Fill_Rate = CAST(No_Rows_Filled as decimal(12,2))/CAST(No_Rows_Total as decimal(12,2)) Where DateKey = 18205</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Get Load Date Key"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{56880C31-CEFF-469C-9B98-CA33726FC238}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get Load Date Key"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD88E6C8-8FA5-4D98-B79C-2FC07D1B639E}"
+          SQLTask:SqlStatementSource=" Select Top 1 DatePK  from DimDate Where DATE = CAST(GETDATE() as DATE)"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="DatePK"
+            SQLTask:DtsVariableName="User::DateKey" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loop Through Configuration Table"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Loop through configuration table to get counts for each column added to configuration"
+      DTS:DTSID="{96247AD4-35EA-46F5-8D60-2ACA3EE70EAF}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop Through Configuration Table">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachADOEnumerator"
+        DTS:DTSID="{592E2AA0-0B8B-43AB-A8DC-A1C1CE4ACC45}"
+        DTS:ObjectName="{592E2AA0-0B8B-43AB-A8DC-A1C1CE4ACC45}">
+        <DTS:ObjectData>
+          <FEEADO
+            EnumType="EnumerateRowsInFirstTable"
+            VarName="User::Configuation" />
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop Through Configuration Table\Get Counts Filled In"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{BEED827A-074B-40D4-8C24-0676AF443943}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Counts Filled In"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{FD88E6C8-8FA5-4D98-B79C-2FC07D1B639E}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStmtSourceType="Variable"
+              SQLTask:SqlStatementSource="User::varSelectRowCount"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="CountFilledIn"
+                SQLTask:DtsVariableName="User::Count_FilledIn" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Loop Through Configuration Table\Get Counts Totals"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{4FA8CA6F-2EA2-4618-8B69-A7C9591ECE87}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Counts Totals"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{FD88E6C8-8FA5-4D98-B79C-2FC07D1B639E}"
+              SQLTask:SqlStmtSourceType="Variable"
+              SQLTask:SqlStatementSource="User::varTotalRowCount"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="CountTotalRows"
+                SQLTask:DtsVariableName="User::Column_Total" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Loop Through Configuration Table\Insert into DM_FillRate Table"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{1DF62B98-9754-4209-A0B4-6DEF21D5008A}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Insert into DM_FillRate Table"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{FD88E6C8-8FA5-4D98-B79C-2FC07D1B639E}"
+              SQLTask:SqlStmtSourceType="Variable"
+              SQLTask:SqlStatementSource="User::varInsertDMFillRate" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::varInsertDMFillRate"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="500" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Loop Through Configuration Table.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{B606F6A0-83C5-46C0-BE4C-806D4457516A}"
+          DTS:From="Package\Loop Through Configuration Table\Get Counts Filled In"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Loop Through Configuration Table\Get Counts Totals" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Loop Through Configuration Table.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{2D5D7563-52E8-41F9-B900-892E5ED65E3A}"
+          DTS:From="Package\Loop Through Configuration Table\Get Counts Totals"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Loop Through Configuration Table\Insert into DM_FillRate Table" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{14D5A598-3977-4F30-88BB-016CC1377D94}"
+          DTS:ObjectName="{14D5A598-3977-4F30-88BB-016CC1377D94}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Database_Name" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{579D03AD-C98C-49D8-AA67-F5E9FFA50707}"
+          DTS:ObjectName="{579D03AD-C98C-49D8-AA67-F5E9FFA50707}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::Schema_Name" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{E5CF5F02-4822-4E73-AC23-3574EA9BDE1E}"
+          DTS:ObjectName="{E5CF5F02-4822-4E73-AC23-3574EA9BDE1E}"
+          DTS:ValueIndex="2"
+          DTS:VariableName="User::Table_Name" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{2C7E3A46-B885-4837-9685-963634CC491F}"
+          DTS:ObjectName="{2C7E3A46-B885-4837-9685-963634CC491F}"
+          DTS:ValueIndex="3"
+          DTS:VariableName="User::Column_Name" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{EFD7A440-6E11-4A4D-9950-0C1767ED41F8}"
+          DTS:ObjectName="{EFD7A440-6E11-4A4D-9950-0C1767ED41F8}"
+          DTS:ValueIndex="4"
+          DTS:VariableName="User::Department" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Pull Configuration Data"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5330CD40-8E94-4B64-9334-1D52F8B95594}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Pull Configuration Data"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD88E6C8-8FA5-4D98-B79C-2FC07D1B639E}"
+          SQLTask:SqlStatementSource="Select &#xA;&#x9;[Database_Name], &#xA;&#x9;[SCHEMA_NAME], &#xA;&#x9;[Table_Name], &#xA;&#x9;[Column_Name], &#xA;&#x9;[Department]&#xA;from ConstellationDW.dbo.DM_FillRate_Config"
+          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::Configuation" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Update Fill Rate Percentage"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0E134EB7-6415-4772-9D72-DF8977505542}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Update Fill Rate Percentage"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{FD88E6C8-8FA5-4D98-B79C-2FC07D1B639E}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::varUpdateDMFillRate" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::varUpdateDMFillRate"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="500" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{260F8B48-2E42-45B9-81E8-8ED0124273C3}"
+      DTS:From="Package\Get Load Date Key"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Pull Configuration Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{2A46E494-F8EC-415D-9A52-FDB476C4B3D0}"
+      DTS:From="Package\Pull Configuration Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Loop Through Configuration Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{73033B08-2817-4BA1-B1AF-DFF770893D7F}"
+      DTS:From="Package\Loop Through Configuration Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Update Fill Rate Percentage" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Get Load Date Key"
+          TopLeft="160.571431305944,35.7647039604847" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Loop Through Configuration Table\Get Counts Filled In"
+          TopLeft="69.3714283086816,13.547057836856" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Loop Through Configuration Table\Get Counts Totals"
+          TopLeft="56.2285709420028,85.782351542674" />
+        <NodeLayout
+          Size="215,42"
+          Id="Package\Loop Through Configuration Table\Insert into DM_FillRate Table"
+          TopLeft="36.2285706014048,164.041177594538" />
+        <EdgeLayout
+          Id="Package\Loop Through Configuration Table.PrecedenceConstraints[Constraint]"
+          TopLeft="135.999999625342,55.947057836856">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.835293705818"
+              Start="0,0"
+              End="0,22.335293705818">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.335293705818" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop Through Configuration Table.PrecedenceConstraints[Constraint 1]"
+          TopLeft="140.628570771704,127.382351542674">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.6588260518641"
+              Start="0,0"
+              End="0,29.1588260518641">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.1588260518641" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="278,227"
+          Size="278,270"
+          Id="Package\Loop Through Configuration Table"
+          TopLeft="101.600000749315,198.447058857848" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Pull Configuration Data"
+          TopLeft="152.000002588545,118.682354459796" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Update Fill Rate Percentage"
+          TopLeft="159.428574143624,503.105888118546" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="244.485716947244,77.3647039604847">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.3176504993109"
+              Start="0,0"
+              End="0,33.8176504993109">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.8176504993109" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="243.00000166893,160.282354459796">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.164704398052"
+              Start="0,0"
+              End="0,30.664704398052">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.664704398052" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="240.800000749315,468.047058857848">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="23.0285733943089,35.0588292606978"
+              Start="0,0"
+              End="23.0285733943089,27.5588292606978">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.5294146303489" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.5294146303489"
+                    Point2="0,17.5294146303489"
+                    Point3="4,17.5294146303489" />
+                  <mssgle:LineSegment
+                    End="19.0285733943089,17.5294146303489" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19.0285733943089,17.5294146303489"
+                    Point2="23.0285733943089,17.5294146303489"
+                    Point3="23.0285733943089,21.5294146303489" />
+                  <mssgle:LineSegment
+                    End="23.0285733943089,27.5588292606978" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
